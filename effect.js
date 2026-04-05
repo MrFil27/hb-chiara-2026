@@ -176,8 +176,8 @@ $('document').ready(function(){
 			$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
 				i=i+1;
 				$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
-				if(i==52){
-					$("p:nth-child(50)").fadeOut('slow').promise().done(function () {
+				if(i==71){ // 51 messages --> index 52
+					$("p:nth-child(69)").fadeOut('slow').promise().done(function () {
 						$('.message').fadeOut('fast');
 						$('.cake').fadeIn('fast');
 					});
