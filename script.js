@@ -12,30 +12,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const frasi = [
         "Chiara", "quest'oggi", "è un giorno speciale", "e per questo motivo", "colgo l'occasione del tuo compleanno",
-        "per dedicarti due parole", "che probabilmente", "non sarei mai riuscito", "a dirti personalmente.",
+        "per dedicarti due parole", "che probabilmente", "non sarei riuscito", "a dirti personalmente.",
         "Ho preparato", "questo piccolo regalo", "che spero apprezzi...", "mettendo cura", "in ogni dettaglio.",
         "Sai cosa significa il tuo nome?", "Significa...", "luminosa, o... splendente", "perciò", "lascia che questa giornata",
         "splenda come splendi tu.", "Ti auguro il meglio", "che la tua vita sia serena", "e splendente 😁",
         "e che Dio ti doni", "un anno felice.", "Ti auguro", "di non perdere il modo", "in cui guardi il mondo", "di continuare",
         "a trovare il bello", "nelle piccole cose", "di avere gli occhi", "capaci di emozionarsi", "davanti a un cielo colorato",
-        "come questo 😁", "e ti auguro", "ogni giorno", "di trovare un tramonto", "che ti porti un sorriso", "anche il giorno dopo.",
-        
-        // ---- PAUSE ----
-        " ",
-        " ",
+        "come questo 😉", "e ti auguro", "ogni giorno", "di trovare un tramonto", "che ti porti un sorriso", "anche il giorno dopo.",
+        " ", " ",
         "In queste ultime settimane", "ti ho considerata", "in una maniera diversa", "e anche se", "molto spesso", "mi limito a un...",
-        "\"ciao\" o un... \"come va?\" 😐", "ho sempre voluto andare oltre", "ma non sempre ci riesco", "è come se",
-        "avessi dimenticato come si fa...", "a volte", "faccio passi troppo lunghi", "e questo mi fa capire", "quanto sono umano",
-        "in tutti i miei errori", "nonostante la mia inesperienza.",
-        
-        // ---- PAUSE ----
-        " ",
-        " ",
-        "In conclusione:", "ho pensato parecchio", "a questo messaggio",
-        "poiché a voce...", "non mi viene mai", "in modo naturale", "o spontaneo, si potrebbe dire.",
-        "Mi piacerebbe avere una conversazione", "e conoscerti meglio...", "nonostante le difficoltà", "perciò",
+        "\"ciao\" o un... \"come va?\" 😐", "ho sempre voluto andare oltre", "nonostante le mie difficoltà", "perciò",
         "spero che questo messaggio", "sia solo l'inizio",
-        "di una lunga conversazione <img src=\"happy.png\" alt=\"happy\" style=\"display: inline-block; height: 1.5em; width: auto; margin-top: 8px;\">"
+        "di una lunga conversazione <img src=\"happy.png\" alt=\"happy\" style=\"display: inline-block; height: 1.5em; width: auto; margin-top: 8px;\">",
+        "<i>„Il Signore faccia risplendere</i>", "<i>il suo volto su di te</i>", "<i>e ti sia propizio“</i>", "<i>Numeri 6:25</i>"
     ];
 
     setTimeout(() => { progresso.style.width = "100%"; }, 500);
@@ -96,11 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btnMessaggio.addEventListener("click", () => {
         cakeWorld.style.opacity = "0";
         cakeWorld.style.transform = "scale(0.7)";
-        
-        setTimeout(() => {
-            musica.play().catch(e => console.log("Audio bloccato dal browser:", e));
-        }, 3000);
-
+        setTimeout(() => { musica.play().catch(e => console.log("Audio bloccato:", e)); }, 3000);
         setTimeout(() => {
             transText.classList.remove("hidden");
             transText.style.opacity = "1";
@@ -110,12 +95,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     transText.classList.add("hidden");
                     cakeWorld.classList.add("hidden");
                     sunsetScene.classList.add("scena-attiva");
-                    
                     document.querySelector(".cielo-finale").style.animation = "apparizioneRosa 120s linear forwards";
                     document.querySelector(".sole").style.animation = "tramontoRosso 120s linear forwards";
                     document.querySelector(".collina-dietro").style.animation = "scurisciDietro 120s linear forwards";
                     document.querySelector(".collina-davanti").style.animation = "scurisciDavanti 120s linear forwards";
-                    
                     avviaSequenzaMessaggi();
                 }, 1000);
             }, 3000);
@@ -128,15 +111,16 @@ document.addEventListener("DOMContentLoaded", () => {
             p.className = "messaggio-testo";
             p.innerHTML = frasi[i];
             containerMessaggi.appendChild(p);
-
             await new Promise(r => setTimeout(r, 100));
             p.classList.add("visibile");
-
             await new Promise(r => setTimeout(r, 2200)); 
-
             p.classList.remove("visibile");
             await new Promise(r => setTimeout(r, 1200)); 
             p.remove();
         }
+
+        setTimeout(() => {
+            document.getElementById("dedica-finale").classList.remove("hidden");
+        }, 1000);
     }
 });

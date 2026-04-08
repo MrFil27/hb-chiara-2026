@@ -1,77 +1,47 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy birthday</title>
+    <title>Happy Birthday</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
     <audio id="musica-sottofondo" src="audio.mp3" preload="auto" loop></audio>
-
     <div id="overlay-iniziale">
         <div class="loader-container">
             <div id="testo-stato">Preparazione in corso...</div>
-            <div class="barra-caricamento">
-                <div id="progresso"></div>
-            </div>
+            <div class="barra-caricamento"><div id="progresso"></div></div>
             <button id="btn-inizia" class="hidden">Inizia</button>
         </div>
     </div>
-
     <div id="cake-world" class="hidden">
         <div class="cake-base">
             <div id="hint-click" style="opacity: 0;">Spegni la candela</div>
-
             <div class="candle-number" id="group-candele">
-                <div class="number-body">
-                    20
-                    <div class="candle-texture"></div>
-                    <div class="wick"></div>
-                </div>
-                <div class="flame">
-                    <div class="flame-inner"></div>
-                </div>
+                <div class="number-body">20<div class="candle-texture"></div><div class="wick"></div></div>
+                <div class="flame"><div class="flame-inner"></div></div>
                 <div class="smoke"></div>
             </div>
-
             <div class="layer-group g3">
-                <div class="cream c3">
-                    <div class="drip"></div>
-                    <div class="drip"></div>
-                </div>
+                <div class="cream c3"><div class="drip"></div><div class="drip"></div></div>
                 <div class="dough d3"></div>
             </div>
             <div class="layer-group g2">
-                <div class="cream c2">
-                    <div class="drip"></div>
-                    <div class="drip"></div>
-                </div>
+                <div class="cream c2"><div class="drip"></div><div class="drip"></div></div>
                 <div class="dough d2"></div>
             </div>
             <div class="layer-group g1">
-                <div class="cream c1">
-                    <div class="drip"></div>
-                    <div class="drip"></div>
-                </div>
+                <div class="cream c1"><div class="drip"></div><div class="drip"></div></div>
                 <div class="dough d1"></div>
             </div>
-
             <div class="plate"></div>
             <h1 id="titolo-auguri">Buon compleanno Chiara</h1>
-            <button id="btn-messaggio" class="hidden-opacity">
-                Un messaggio per te
-                (alza il volume)
-            </button>
+            <button id="btn-messaggio" class="hidden-opacity">Un messaggio per te (alza il volume)</button>
         </div>
     </div>
-
     <div id="transizione-testo" class="hidden">Goditi il tramonto 😉</div>
-
     <div id="sunset-scene" class="hidden-scene">
         <div class="scena-fonda">
             <div class="cielo-finale"></div>
@@ -84,10 +54,12 @@
                 <div class="collina collina-davanti"></div>
             </div>
             <div id="container-messaggi"></div>
+            <div id="dedica-finale" class="hidden">
+                <div class="scritta-nuvola">Chiara</div>
+                <div class="sottotitolo-finale">Buon 20° compleanno</div>
+            </div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
-
 </html>
