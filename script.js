@@ -13,7 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const frasi = [
         "Chiara", "quest'oggi", "è un giorno speciale", "e per questo motivo", "colgo l'occasione del tuo compleanno",
         "per dedicarti due parole", "che probabilmente", "non sarei riuscito", "a dirti personalmente.",
-        "Ho preparato", "questo piccolo regalo", "che spero apprezzi...", "mettendo cura", "in ogni dettaglio.",
+        "Ho preparato", "questo piccolo regalo", "che spero apprezzi...", "mettendo cura", "in ogni dettaglio",
+        "pregando insistentemente", "e credo", "che tutto questo", "è stato possibile", "solo per merito di Dio.",
+        "",
         "Sai cosa significa il tuo nome?", "Significa...", "luminosa, o... splendente", "perciò", "lascia che questa giornata",
         "splenda come splendi tu.", "Ti auguro il meglio", "che la tua vita sia serena", "e splendente 😁",
         "e che Dio ti doni", "un anno felice.", "Ti auguro", "di non perdere il modo", "in cui guardi il mondo", "di continuare",
