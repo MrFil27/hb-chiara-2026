@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "\"ciao\" o un... \"come va?\" 😐", "ho sempre voluto andare oltre", "ma non sempre ci riesco", "è come se", "avessi dimenticato come si fa",
         "a volte", "faccio passi troppo lunghi", "e questo mi fa capire", "quanto sono umano", "in tutti i miei errori", "nonostante la mia inesperienza",
         "",
-        "In conclusione", "ho pensato parecchio", "a questo messaggio", "poiché a voce...", "non mi viene mai", "in modo naturale",
+        "Per finire", "ho pensato parecchio", "a questo messaggio", "poiché a voce...", "non mi viene mai", "in modo naturale",
         "o spontaneo, si potrebbe dire.", "Mi piacerebbe avere una conversazione", "e conoscerti meglio...", "nonostante le mie difficoltà", "perciò",
         "spero che questo messaggio", "sia solo l'inizio",
         "di una lunga conversazione <img src=\"happy.png\" alt=\"happy\" style=\"display: inline-block; height: 1.5em; width: auto; margin-top: 8px;\">",
